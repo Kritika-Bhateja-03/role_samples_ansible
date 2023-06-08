@@ -1,0 +1,10 @@
+- hosts: idrac
+  vars:
+    target:
+      - CPU
+      - NIC
+      - Fan
+    system_id: "{{ system_id }}"
+    validate_certs: false
+  roles:
+    - idrac_gather_facts

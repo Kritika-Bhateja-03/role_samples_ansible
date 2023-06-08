@@ -1,4 +1,6 @@
 - hosts: idrac
+  collections:
+    - dellemc.openmanage
   vars:
     target:
       - CPU

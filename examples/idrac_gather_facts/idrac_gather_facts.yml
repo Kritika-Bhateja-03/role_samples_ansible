@@ -1,0 +1,8 @@
+---
+- name: Get iDRAC information
+  hosts: idrac
+  gather_facts: false
+  vars_files:
+    - ../vars_files/credentials.yml
+  roles:
+    - dellemc.openmanage.idrac_gather_facts

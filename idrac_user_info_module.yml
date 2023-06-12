@@ -1,6 +1,7 @@
 - hosts: idrac
   name: Fetching idrac user facts.
   gather_facts: false
+  ansible_connection: ssh
 
   tasks:
     - name: Retrieve basic details of all accounts.

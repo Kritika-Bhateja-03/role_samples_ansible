@@ -1,0 +1,11 @@
+- hosts: idrac
+  name: Fetching idrac user facts.
+  gather_facts: false
+
+  tasks:
+    - name: Retrieve basic details of all accounts.
+      dellemc.openmanage.idrac_user_info:
+        idrac_ip: "{{ idrac_ip }}"
+        idrac_user: "{{ idrac_user }}"
+        idrac_password: "{{ idrac_password }}"
+        validate_certs: false

@@ -1,12 +1,8 @@
 state: "present"
-raid_type: "RAID1"
-name: "VD0"
-controller_id: "RAID.Slot.1-1"
+raid_type: "RAID0"
+name: "VD-test"
+controller_id: "RAID.Integrated.1-1"
 drives:
-  - Disk.Bay.5:Enclosure.Internal.0-1:RAID.Slot.1-1
-  - Disk.Bay.6:Enclosure.Internal.0-1:RAID.Slot.1-1
-block_size_bytes: 512
+  - Disk.Bay.0:Enclosure.Internal.0-0:RAID.Integrated.1-1
 capacity_bytes: 299439751168
 optimum_io_size_bytes: 65536
-encryption_types: NativeDriveEncryption
-encrypted: true

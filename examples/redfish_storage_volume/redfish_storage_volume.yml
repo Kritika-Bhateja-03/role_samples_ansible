@@ -3,9 +3,7 @@
   hosts: idrac
   gather_facts: false
   vars:
-    hostname: "{{ hostname }}"
-    password: "{{ password }}"
-    username: "{{ username }}"
+    hostname: "{{ inventory_hostname }}"
     state: "present"
     validate_certs: false
     raid_type: "RAID0"

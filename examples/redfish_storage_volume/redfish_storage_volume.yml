@@ -4,6 +4,8 @@
   gather_facts: false
   vars:
     hostname: "{{ inventory_hostname }}"
+    username: "username"
+    password: "password"
     state: "present"
     validate_certs: false
     raid_type: "RAID0"

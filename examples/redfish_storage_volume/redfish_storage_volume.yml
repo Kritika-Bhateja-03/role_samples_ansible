@@ -2,10 +2,9 @@
 - name: Redfish Storage volume Configurations
   hosts: idrac
   gather_facts: false
+  vars_files:
+    - ../vars_files/credentials.yml
   vars:
-    hostname: "{{ inventory_hostname }}"
-    username: "username"
-    password: "password"
     state: "present"
     validate_certs: false
     raid_type: "RAID0"

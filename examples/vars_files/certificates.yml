@@ -1,6 +1,6 @@
 command: "generate_csr"
 certificate_type: "HTTPS"
-certificate_path: "/home/omam/mycerts"
+certificate_path: "/var/lib/awx/aap_roles"
 cert_params:
   common_name: "sample.domain.com"
   organization_unit: "OrgUnit"
